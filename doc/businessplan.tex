@@ -94,4 +94,63 @@ Der Schweizer Fitnessmark boomt und trotzdem ist keine Digitalisierung in der Br
 \section{Umsetzungsplan: die Realisierung}
 Musste nicht bearbeitet werden
 
+\section{Latex Syntax}
+\subsection{Untersektion}
+\subsubsection{Unter Untersektion}
+\paragraph{Paragraph (wird eher selten verwendet)} 
+
+\footnote{\url{www.google.ch}}
+
+% Ich bin ein Kommentar
+% TODO Ich bin ein TODO
+
+\begin{itemize}
+	\item Bullet Point 1 
+	\item Bullet Point 2
+	\item Bullet Point 3
+\end{itemize}
+
+\begin{enumerate}
+	\item Zahlen 1
+	\item Zahlen 2
+\end{enumerate}
+
+\begin{description}
+	\item[Begriff] Beschreibung
+	\item[Begriff 2] Beschreibung
+\end{description}
+
+\paragraph{Mathematische Formel}
+\[
+	c^2 = \frac{a}{b} \cdot f
+\]
+
+
+\begin{table}[h]
+	\centering
+	\begin{tabu} to \linewidth {l l l}
+		\toprule 
+		1 Spalte & 2 Spalte  & 3 Spalte \\
+		\midrule
+		1 Spalte & 2 Spalte & 3 Spalte \\
+		1 Spalte & 2 Spalte & 3 Spalte \\
+		\bottomrule 
+	\end{tabu} 
+	\caption{Ich bin die Beschreibung einer Tabelle}
+\end{table}
+
+\begin{table}[h]
+	\centering
+	\begin{tabu} to \linewidth {l X}
+		\toprule 
+		1 Spalte  & 3 Spalte \\
+		\midrule
+		1 Spalte & X sollte verwendet werden, wenn wir sehr sehr sehr sehr sehr sehr sehr sehr sehr sehr sehr sehr sehr sehr sehr sehr sehr sehr sehr sehr sehr lange Zeilen haben \\
+		\bottomrule 
+	\end{tabu} 
+	\caption{Tabelle mit Autmatischen Umbrüchen.}
+\end{table}
+
+
+
 \input{appendix}

@@ -67,6 +67,18 @@ bibliography=totocnumbered]{scrartcl}
 \usepackage{graphicx}
 \graphicspath{{images/}} % default paths
 
+%figures
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+
+%risk-rating
+\newcommand\risk[2]{
+	\begin{tikzpicture}
+	\draw [thick, |->] (0,2) -- (#2,2);
+	\draw [fill=red, thick] (#1,2) circle [radius=0.2];
+	\end{tikzpicture}
+}
+
 % Boxes
 \usepackage{fancybox}
 

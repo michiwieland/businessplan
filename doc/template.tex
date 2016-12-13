@@ -1,7 +1,7 @@
 \documentclass[
 a4paper,
 oneside,
-10pt,
+11pt,
 fleqn,
 headsepline,
 toc=listofnumbered, 
@@ -38,8 +38,6 @@ bibliography=totocnumbered]{scrartcl}
 % Inhaltsverzeichnis
 \usepackage{makeidx} 
 \makeindex
-
-\usepackage{float}
 
 \usepackage{url}
 \usepackage[pdfborder={0 0 0}]{hyperref}
@@ -115,6 +113,15 @@ bibliography=totocnumbered]{scrartcl}
 \definecolor{DarkCyan}{rgb}{0.0, 0.5, 0.4}
 \definecolor{LightLime}{rgb}{0.3, 0.5, 0.4}
 \definecolor{Blue}{rgb}{0.0, 0.0, 1.0}
+
+% Page colors
+\definecolor{PrimaryColor}{HTML}{CDDC39}
+
+\usepackage{afterpage}
+\usepackage{xcolor}
+\usepackage{sectsty}
+\sectionfont{\color{PrimaryColor}}
+
 
 \lstdefinestyle{eclipse-style}{
 	language=Java,

@@ -6,6 +6,7 @@
 
 \begin{document}
 
+
 % German \and
 \renewcommand\Authands{ und }
 % Front page
@@ -21,17 +22,15 @@
 \maketitle
 
 %TODO add front image
+\pagecolor{PrimaryColor}\afterpage{\nopagecolor}
+
 \begin{center}
-%	\includegraphics[width=0.7\linewidth]{images/front}
+	\includegraphics[width=0.7\linewidth]{images/front}
 \end{center}
-
-\vfill
-
-% Github
-\paragraph{Github:} \url{\GITHUB}
 
 % Table of contents
 \tableofcontents
+
 
 % Glossar and acronyms (if included \loadglsentries{glossar})
 \printglossary[type=\acronymtype]

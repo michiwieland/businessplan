@@ -1,7 +1,7 @@
 \documentclass[
 a4paper,
 oneside,
-11pt,
+12pt,
 fleqn,
 headsepline,
 toc=listofnumbered, 
@@ -91,7 +91,7 @@ bibliography=totocnumbered]{scrartcl}
 \usepackage{multicol}
 
 % Header and footer
-\usepackage{scrlayer-scrpage}
+\usepackage[automark]{scrlayer-scrpage}
 \setkomafont{pagehead}{\normalfont}
 \setkomafont{pagefoot}{\normalfont}
 \automark*{section}
@@ -99,6 +99,33 @@ bibliography=totocnumbered]{scrartcl}
 \ihead{\headmark}
 \ohead{\TITLE}
 \cfoot{\pagemark}
+\setlength{\headsep}{30pt}
+
+
+%Defining the Layer
+\makeatletter
+\newlength{\topheight}
+\setlength{\topheight}{\sls@topmargin}
+\addtolength{\topheight}{\headheight}
+\DeclareLayer[
+background,
+contents={%
+	\color{\chaptercolor}%
+	\rule{\paperwidth}{\topheight}%
+}%
+]{scrheadings.head.background}
+\makeatother
+
+%Adding the Layer to the pagestyles
+\AddLayersAtBeginOfPageStyle{scrheadings}{%
+	scrheadings.head.background,%
+}
+\AddLayersAtBeginOfPageStyle{plain.scrheadings}{%
+	scrheadings.head.background}
+
+\usepackage{etoolbox}
+\newcommand{\chaptercolor}{PrimaryColor}
+
 
 % Pseudocode
 \usepackage{algorithm}
@@ -121,9 +148,7 @@ bibliography=totocnumbered]{scrartcl}
 \usepackage{afterpage}
 \usepackage{xcolor}
 \usepackage{sectsty}
-\sectionfont{\color{PrimaryColor}}
-\subsectionfont{\color{SecondaryColor}}
-\subsubsectionfont{\color{SecondaryColor}}
+
 \color{SecondaryColor}
 
 \lstdefinestyle{eclipse-style}{

@@ -3,7 +3,6 @@ a4paper,
 oneside,
 12pt,
 fleqn,
-headsepline,
 toc=listofnumbered, 
 bibliography=totocnumbered]{scrartcl}
 
@@ -71,7 +70,6 @@ bibliography=totocnumbered]{scrartcl}
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric}
 
-
 % Boxes
 \usepackage{fancybox}
 
@@ -84,9 +82,8 @@ bibliography=totocnumbered]{scrartcl}
 \usepackage{multicol}
 
 % Header and footer
+\setkomafont{pagehead}{\normalfont\sffamily}
 \usepackage[automark]{scrlayer-scrpage}
-\setkomafont{pagehead}{\normalfont}
-\setkomafont{pagefoot}{\normalfont}
 \automark*{section}
 \clearpairofpagestyles
 \ihead{\headmark}
@@ -98,7 +95,7 @@ bibliography=totocnumbered]{scrartcl}
 %Defining the Layer
 \makeatletter
 \newlength{\topheight}
-\setlength{\topheight}{\sls@topmargin}
+\setlength{\topheight}{70pt}
 \addtolength{\topheight}{\headheight}
 \DeclareLayer[
 background,

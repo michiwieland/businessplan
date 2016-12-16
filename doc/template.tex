@@ -6,6 +6,10 @@ fleqn,
 toc=listofnumbered, 
 bibliography=totocnumbered]{scrartcl}
 
+% table spaces
+\usepackage{array}
+\renewcommand{\arraystretch}{1.5}
+
 % deutsche Trennmuster etc.
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -42,6 +46,7 @@ bibliography=totocnumbered]{scrartcl}
 \usepackage[pdfborder={0 0 0}]{hyperref}
 \usepackage[all]{hypcap}
 \usepackage{hyperxmp} % for license metadata
+\urlstyle{same}
 
 % Glossar und Abkürzungsverzeichnis
 \usepackage[acronym,toc,nopostdot]{glossaries}
@@ -100,7 +105,7 @@ bibliography=totocnumbered]{scrartcl}
 \DeclareLayer[
 background,
 contents={%
-	\color{\chaptercolor}%
+	\color{PrimaryColor}%
 	\rule{\paperwidth}{\topheight}%
 }%
 ]{scrheadings.head.background}
@@ -112,9 +117,6 @@ contents={%
 }
 \AddLayersAtBeginOfPageStyle{plain.scrheadings}{%
 	scrheadings.head.background}
-
-\usepackage{etoolbox}
-\newcommand{\chaptercolor}{PrimaryColor}
 
 
 % Pseudocode

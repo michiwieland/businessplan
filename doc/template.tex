@@ -105,7 +105,7 @@ bibliography=totocnumbered]{scrartcl}
 \DeclareLayer[
 background,
 contents={%
-	\color{\chaptercolor}%
+	\color{PrimaryColor}%
 	\rule{\paperwidth}{\topheight}%
 }%
 ]{scrheadings.head.background}
@@ -117,9 +117,6 @@ contents={%
 }
 \AddLayersAtBeginOfPageStyle{plain.scrheadings}{%
 	scrheadings.head.background}
-
-\usepackage{etoolbox}
-\newcommand{\chaptercolor}{PrimaryColor}
 
 
 % Pseudocode

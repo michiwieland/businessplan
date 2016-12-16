@@ -336,7 +336,7 @@ Im Gründungsjahr umfasst das Team nur die vier Gründungsmitglieder. Geplant is
 \end{tabu} 
 
 \subsection{Rechtsform}
-GitFit wird als GmbH in das Handelsregister des Kantons Zug eingetragen. Das Eigenkapital von 20'000 CHF wird von den Teilhaber übernommen.
+GitFit wird als GmbH in das Handelsregister des Kantons Zug eingetragen. Das Eigenkapital von 200'000 CHF wird von den Teilhaber übernommen.
 
 
 \subsection{Organisatorisches}
@@ -358,7 +358,6 @@ Die Geschäftsleitung wird von Patrick Scherler übernommen. Die vier Gründungs
 	Patrick Scherler \\
 	Tannenstrasse 4 \\
 	9242 Oberuzwil \\
-	079 851 49 78 \\
 	
 	\paragraph{Funktion} \hfill \\
 	Partner, Geschäftsleitung, Entwicklung \\
@@ -459,16 +458,17 @@ Nachfolgend sind die wahrscheinlichsten Ereignisse aufgelistet und kurz beschrie
 \\ \\
 \begin{tabu} to \linewidth {l X}
 	Wenig Absatz & Unser Produkt stösst auf wenig Begeisterung und wir können nicht genügend Kunden akquirieren. \newline \\
-	Keine Grosskunden & Dies ist als separater Punkt aufgeführt, da unsere Strategie das akquirieren von Fitnesscenter vorsieht. \newline \\
+	Keine Grosskunden & Dies ist als separater Punkt aufgeführt, da unsere Strategie das akquirieren von Fitnesscenter-Ketten vorsieht. \newline \\
 	Konkurrenz & Das plötzliche Auftauchen eines neuen Mitbewerbers oder die Veränderung einer bestehenden Konkurrenzbeurteilung. \newline \\
-	Serverausfall & Das Ausfallen unserer Serverinfrastruktur führt zu einem Unterbruch in der Verfügbarkeit unserer Cloud. \newline \\
-	Datendiebstahl & Das mutwillige Entwenden von Kundendaten durch eine Drittperson. \newline \\
+	Applikationsausfall & Das Ausfallen unserer Applikation in der Cloud führt zu einem Unterbruch in der Verfügbarkeit unserer App. \newline \\
+	Datendiebstahl & Das mutwillige Entwenden von Kundendaten durch eine Drittperson. \newline \\ 
 	Datenverlust & Der unwiderrufliche Verlust von gespeicherten Kundendaten. \newline \\
 \end{tabu}
+\\
+\clearpage
 
-\hfill \\
-In der Tabelle sind die Ereignisse absteigend nach ihrem geschätzten Schadenspotential aufgeführt. Das Risiko entspricht dem Produkt des Schadenspotentials und der Eintrittswahrscheinlichkeit.
-\begin{table}[h]
+\noindent In der Tabelle sind die Ereignisse absteigend nach ihrem geschätzten Schadenspotential aufgeführt. Das Risiko entspricht dem Produkt des Schadenspotentials und der Eintrittswahrscheinlichkeit.
+\begin{table}[H]
 	\centering
 	\begin{tabu} to \linewidth {l l l l}
 		\toprule
@@ -477,7 +477,7 @@ In der Tabelle sind die Ereignisse absteigend nach ihrem geschätzten Schadenspo
 		Wenig Absatz & 4 & 4 & 16 \\
 		Keine Grosskunden & 3 & 3 & 9 \\
 		Konkurrenz & 3 & 2 & 6 \\
-		Serverausfall & 1 & 2 & 2 \\
+		Applikationsausfall & 1 & 2 & 2 \\
 		Datendiebstahl & 2 & 1 & 2 \\
 		Datenverlust & 1 & 1 & 1 \\
 		\bottomrule
@@ -486,7 +486,7 @@ In der Tabelle sind die Ereignisse absteigend nach ihrem geschätzten Schadenspo
 	\caption{Risikoanalyse der wahrscheinlichsten Ereignisse}
 \end{table}
 
-Aus den oben berechneten Daten ergibt sich folgendes Diagramm zur einfacheren Risikobeurteilung. Die Kreise entsprechen den Ereignissen und deren Grösse dem jeweiligen Risiko.
+\noindent Aus den oben berechneten Daten ergibt sich folgendes Diagramm zur einfacheren Risikobeurteilung. Die Kreise entsprechen den Ereignissen und deren Grösse dem jeweiligen Risiko.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{images/risikoanalyse}
@@ -502,19 +502,19 @@ Das Risiko von zu wenig Absatz ist zwar relativ gross, besteht allerdings vorwie
 Das Ausbleiben von Grosskunden wäre ein herber Schlag für unser Unternehmen. Man müsste das Konzept und den Werbeauftritt grundlegend überarbeiten oder die Strategie anpassen und erst auf kleinere Fitnesscenter fokussieren.
 \paragraph{Konkurrenz}
 Sollte sich die Konkurrenzsituation unerwartet schnell ändern, stellt dies vor allem eine Gefahr dar, solange der Kundenstamm noch relativ klein ist. Eine solide Kundenbasis würde Sicherheit bringen, da die Kundenbindung unseres Produkts eher hoch ist.
-\paragraph{Serverausfall, Datendiebstahl und –Verlust}
-Das Behandeln dieser Probleme kann durch gängige technische Mittel relativ Einfach umgesetzt werden. Redundante Hardware und regelmässige Datensicherungen Schützen vor längeren Ausfallzeiten und Datenverlust. Verschlüsselung und Sicherheitstechnologien bieten einen Schutz vor Datendiebstählen.
+\paragraph{Applikationsausfall, Datendiebstahl und –Verlust}
+Das Behandeln dieser Probleme kann durch gängige technische Mittel relativ einfach umgesetzt werden. Durch ein ausgeklügeltes Qualitätsmanagement verhindern wir Ausfälle in unserer Applikation.  Verschlüsselung und Sicherheitstechnologien bieten Schutz vor Datendiebstählen.
 
 \subsection{SWOT-Analyse}
 
 Die SWOT-Analyse stellt unsere internen Stärken und Schwächen den externen Chancen und Gefahren gegenüber. Dies dient der Positionsbestimmung und bietet die Grundlage für eine realistische Strategieentwicklung.
 
-\begin{figure}[H]
+\begin{table}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{images/SWOT-analyse}
 	\caption{SWOT Analyse der Chancen und Risiken von GitFit}
 	\label{fig:swot-analyse}
-\end{figure}
+\end{table}
 
 \clearpage
 \section{Finanzieller Teil: die nackten Zahlen}
@@ -525,21 +525,21 @@ Die Finanzpläne sind dem Anhang \ref{appendix:finanzplan} zu entnehmen.
 
 \subsubsection{Arbeitsplätze}
 
-In den ersten drei Jahren Arbeiten alle Mitarbeiter von privaten Arbeitsplätzen Zuhause aus (''Working from Home''). Dies ist dank unserer digitalen Lösung möglich.
+In den ersten drei Jahren arbeiten alle Mitarbeiter von privaten Arbeitsplätzen zu Hause aus (''Working from Home''). Dies ist dank unserer digitalen Lösung möglich.
 
 \subsubsection{Schulungen und Margen auf verkaufte Geräte}
-Die durch Schulungen und Margen auf verkaufte Geräte eingenommenen Kosten sind ungefähr linear zu den Einnahmen durch das Abomodell. Wir schätzen diese auf ca. 8\% der Abokosten.
-% Und ist damit ca. gleich so gross wie die MwSt - darum ist das im Excel im 3. Jahr nicht eingerechnet bzw. wird nur zum Runden verwendet.
+Die Einnahmen durch Schulungen und Margen auf verkaufte Geräte sind ungefähr linear zu den Einnahmen durch das Abomodell. Wir schätzen diese auf ca. 8\% der Abokosten. 
+Dies entspricht ungefähr dem Mehrwertssteuersatz und wird deshalb nicht explizit im Finanzplan aufgeführt.
 
 \subsubsection{Kundenzahlen / Aboumsatz}
 
-Der Tabelle \ref{tbl:kundenzahlen-aboumsatz} können die Angestrebten Nutzerzahlen abgelesen werden. Auf der Basis dieser Zahlen basieren die im Finanzplan angegebenen Zahlen.
+Der Tabelle \ref{tbl:kundenzahlen-aboumsatz} können die angestrebten Accountzahlen abgelesen werden. Auf der Basis dieser Werte basieren die im Finanzplan angegebenen Zahlen.
 
 \begin{table}[h]
 	\centering
 	\begin{tabu} to \linewidth {l l l}
 		\toprule
-		Jahr & Fitnesscenter & Mitglieder/Center (im Durchschnitt) \\
+		Jahr & Fitnesscenter & Mitglieder/Center (im $\varnothing$) \\
 		\midrule
 		2016 & 3 & 500 \\
 		2017 & 30 & 450 \\
@@ -547,49 +547,16 @@ Der Tabelle \ref{tbl:kundenzahlen-aboumsatz} können die Angestrebten Nutzerzahl
 		\bottomrule
 	\end{tabu}
 	\label{tbl:kundenzahlen-aboumsatz}
-	\caption{Geplante Kundenzahlen / Aboumsatz}
+	\caption{Geplante Accountzahlen / Aboumsatz}
 \end{table}
 
 \subsubsection{Kosten für das Cloud-Hosting}
-Die Kosten für das Cloud-Hosting sind abhängig von der Anzahl verpflichteten Abonnenten; damit skalieren die Kosten gleichmässig mit dem Umsatz, und beträgt ca. 1\% der eingenommenen Abonnementsgebühren.
+Die Kosten für das Cloud-Hosting sind abhängig von der Anzahl verpflichteten Abonnenten; damit skalieren die Kosten gleichmässig mit dem Umsatz und betragen ca. 1\% der eingenommenen Abonnementsgebühren.
 
 \subsubsection{Personalkosten}
-In den ersten zwei Jahren rechnen wir mit den 4 Gründungsmitglieder à 6000.- Brutto (aus betrieblicher Sicht, inkl. Steuerabzüge). Im dritten Jahr werden zwei weitere Mitarbeiter im Bereich Verkauf zu den selben Konditionen eingestellt.
+In den ersten zwei Jahren rechnen wir mit den 4 Gründungsmitglieder à 6000.- Brutto (aus betrieblicher Sicht, exkl. Steuerabzüge). Im dritten Jahr werden zwei weitere MitarbeiterInnen im Bereich Verkauf zu den selben Konditionen eingestellt.
 
 
-% Doppelte Buchhaltung: heisst aktiva und passiva werden auf zwei verschiedenen Konten verbucht, damit am Schluss der gleiche Betrag herauskommt.
-% 
-%Bilanz (per Stichtag):
-%- Aktiva
-%  - Vermögen (Bargeld)
-%  - Debitoren (Ausstehende Rechnungen)
-%- Materialwert-Abschreibungen
-%- Passiva
-%  - Kreditor (Schulden)
-%  - Aktienkapital
-%  - (Gewinn/Verlust)
-%-> Bei Aktiva und Passiva muss die gleiche Zahl herauskommen
-%
-%Erfolgrechne (Periode, zusammenrechnung aus Monaten):
-%- Aufwände
-%  - Lohnkosten
-%  - Miete
-%  - Werbung
-%
-%- Ertrag
-%  - Gewinn/Verlust
-%  - Verkaufseinnahmen / Dienstleistungen etc.
-% Aufwände und Erträge müssen die gleiche Summe haben.
-
-
-% TODO ZKB KMU Check verwenden
-% Das Finanzplanungstool der ZKB muss verwendet werden!
-% Investitionsplan für 3 Jahre
-% Eröffnungsbilanz + Planbilanzen (3 Jahre) + Planerfolgsrechnungen (3 Jahre) (nur normal case)
-% Liquiditätsplan nur für erstes Jahr (pro Monat ausgewiesen)
-% Mengengerüst, das den Berechnungen zugrunde liegt.
-
-% TODO Was ist der Kunde bereit zu zahlen?
 
 \clearpage
 \section{Umsetzungsplan: die Realisierung}

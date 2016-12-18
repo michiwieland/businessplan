@@ -15,6 +15,11 @@ Der Finanzplan ist im Anhang \ref{appendix:finanzplan} zu finden.
 \bibliographystyle{plain} 
 \bibliography{literatur}
 
+\section{Glossar}
+\renewcommand{\glossarysection}[2][]{}
+\printglossary
+\glsaddall
+
 \label{appendix:finanzplan}
 \includepdf[pages={1-},landscape=true]{appendix/finanzplan/finanzplan.pdf}
 

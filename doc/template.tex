@@ -51,16 +51,20 @@ bibliography=totocnumbered]{scrartcl}
 
 % Glossar und Abkürzungsverzeichnis
 \usepackage[acronym,toc,nopostdot]{glossaries}
-\glossarystyle{altlisthypergroup}
+\glossarystyle{altlist}
 \usepackage{xparse}
 \DeclareDocumentCommand{\newdualentry}{ O{} O{} m m m m } {
-	\newglossaryentry{gls-#3}{name={#5},text={#5\glsadd{#3}},
-		description={#6},#1
+	\newglossaryentry{gls-#3}{
+		name={#4 : #5},
+		text={#5\glsadd{#3}},
+		description={#6},
+		#1
 	}
 	\makeglossaries
 	\newacronym[see={[Siehe:]{gls-#3}},#2]{#3}{#4}{#5\glsadd{gls-#3}}
 }
 \makeglossaries
+\loadglsentries{glossar}
 
 % Mathematik
 \usepackage{amsmath}
